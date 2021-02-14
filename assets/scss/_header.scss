@@ -1,0 +1,401 @@
+/* ======================================
+*  04. header
+/* ====================================== */
+header {
+  background: #ffffffd9;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  position: absolute;
+  z-index: 99;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+nav li:last-child a {
+  margin-right: 0;
+}
+nav a {
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  margin-right: 35px;
+  padding: 25px 0;
+  font-size: 14px;
+}
+nav a:hover {
+  color: #ffbc13;
+}
+nav .active:after {
+  width: 25px;
+}
+
+nav .active,
+nav .active:before {
+  color: #ffbc13;
+}
+nav a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #ffbc13;
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+}
+
+nav a:hover:after {
+  width: 25px;
+}
+
+nav ul li > ul {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  min-width: 138px;
+  padding: 10px 0;
+  background: #ffffffd9;
+  transition: all 0.4s ease-in-out;
+}
+
+nav ul li > ul li {
+  width: 100%;
+  padding: 5px 20px;
+  display: block;
+}
+
+nav ul li > ul li a {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+nav ul li > ul li ul {
+  left: 100%;
+  top: 15% !important;
+}
+nav ul li > ul li a:after {
+  bottom: 0;
+}
+nav li > a:before {
+  font-family: "themify";
+  content: "\e64b";
+  position: absolute;
+  font-size: 8px;
+  right: -13px;
+  margin-top: 6px;
+}
+nav li > a:only-child:before {
+  content: "";
+}
+.mobile-menu {
+  display: none;
+}
+.social-icon li {
+  display: inline-block;
+}
+
+.social-icon a {
+  padding: 25px 5px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.social-icon a:hover {
+  color: #ffbc13;
+}
+
+.search-icon a {
+  margin-left: 24px;
+  padding-right: 0;
+}
+
+.header-2 {
+  padding: 40px 40px 0;
+  background: transparent;
+}
+
+.header-2 nav {
+  position: absolute;
+  right: 15px;
+  width: 25%;
+}
+
+.header-2 nav img {
+  background: #121921;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.header-2 nav a {
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.header-2 nav li {
+  display: block;
+  text-align: right;
+  border-bottom: 1px solid #36424e;
+}
+
+.header-2 ul {
+  margin-top: 130px;
+}
+
+.header-2 nav li:last-child {
+  border-bottom: 0;
+}
+
+.header-2 nav a:hover {
+  color: #29ccda;
+}
+
+.header-2 .social-icon {
+  position: relative;
+}
+
+.header-2 .social-icon a {
+  color: #fff;
+}
+.header-2 .social-icon ul {
+  margin-top: 90px;
+}
+
+.header-2 .social-icon li {
+  border: 0;
+}
+
+.header-2 .social-icon a {
+  padding: 15px 0;
+}
+
+.header-2 .social-icon:after {
+  position: absolute;
+  content: "";
+  height: 65px;
+  background: #36424e;
+  bottom: -70px;
+  right: 6px;
+  width: 2px;
+}
+
+.header-2 nav a:after {
+  bottom: 5px;
+  background: transparent;
+}
+
+.header-2 nav ul li > ul {
+  visibility: visible;
+  opacity: 1;
+  position: inherit;
+  background: transparent;
+  padding: 0;
+  display: none;
+  transition: none;
+  margin: 0;
+}
+.header-2 nav ul li > ul li {
+  padding: 0;
+}
+.header-2 nav a:before {
+  color: #fff;
+}
+.header-2 nav a.active,
+.header-2 nav a.active:before,
+.header-2 nav a:hover:before {
+  color: #29ccda;
+}
+.header-2 nav a:hover:after {
+  background: #192836;
+}
+@media only screen and (max-width: 1200px) {
+  .social-icon a {
+    padding: 25px 4px;
+  }
+  .search-icon a {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  nav {
+    background: #ffbc13f0;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    z-index: 99;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 50px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav a {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav a:after {
+    bottom: 5px;
+    background: #192836;
+  }
+
+  nav ul li > ul {
+    visibility: visible;
+    opacity: 1;
+    position: inherit;
+    background: transparent;
+    padding: 0;
+    display: none;
+    transition: none;
+  }
+
+  nav ul li > ul li ul {
+    left: 0;
+    padding: 0;
+  }
+  nav a.active,
+  nav a.active:before,
+  nav a:hover,
+  nav a:hover:before {
+    color: #192836;
+  }
+  nav a:hover:after {
+    background: #192836;
+  }
+  .mobile-menu .ti-close {
+    z-index: 99;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .mobile-menu .ti-menu {
+    position: absolute;
+    right: 45%;
+    top: 23px;
+    font-size: 20px;
+    z-index: 9;
+    cursor: pointer;
+  }
+
+  .social-icon {
+    text-align: right;
+  }
+  .header-2 .mobile-menu .ti-menu {
+    color: #fff;
+    right: 10px;
+  }
+  .header-2 nav img {
+    display: none;
+  }
+  .header-2 nav {
+    position: fixed;
+    right: 0;
+    width: 100%;
+  }
+  .header-2 nav li {
+    border: 0;
+    text-align: left;
+  }
+
+  .header-2 nav li a {
+    padding: 5px 0;
+  }
+
+  .header-2 ul {
+    margin: 0;
+  }
+
+  .header-2 nav ul li > ul li {
+    padding: 5px 20px;
+  }
+  .header-2 .mobile-menu .ti-close {
+    color: #fff;
+    margin-top: -30px;
+  }
+  .header-2 .social-icon ul li {
+    display: inline-block;
+    padding-right: 15px;
+  }
+
+  .header-2 .social-icon ul {
+    margin-top: 30px;
+  }
+  .header-2 .social-icon:after,
+  .header-2 .social-icon a:after {
+    display: none;
+  }
+  .header-2 nav {
+    background: #29ccdaf0;
+  }
+  .header-2 nav a.active,
+  .header-2 nav a.active:before,
+  .header-2 nav a:hover:before,
+  .header-2 nav a:hover {
+    color: #fff;
+  }
+  .header-2 nav a.active:after,
+  .header-2 nav a:hover:after {
+    background: #fff;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mobile-menu .ti-menu {
+    right: 43%;
+    top: 24px;
+  }
+  .social-icon a {
+    padding: 25px 3px;
+  }
+  .search-icon a {
+    margin-left: 3px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    position: absolute;
+    margin-left: -10px;
+  }
+  .social-icon {
+    text-align: right;
+    margin-right: -10px;
+  }
+}

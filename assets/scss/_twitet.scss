@@ -1,0 +1,49 @@
+/* ======================================
+ *  12. twitet
+/* ====================================== */
+.twitet {
+  text-align: center;
+}
+
+.twitet p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.twitet p:after {
+  content: url("../img/quote.png");
+  position: absolute;
+  top: -15px;
+  left: 36%;
+  z-index: -1;
+}
+
+.twitet p a {
+  font-size: 30px;
+}
+
+.twitet a i {
+  color: #4cb9e0;
+  margin-left: 20px;
+}
+
+.quote {
+  background: #fff2d0;
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.quote a {
+  color: #192836;
+  font-weight: 600;
+  border-bottom: 1px solid #192836;
+}
+.quote a:hover {
+  color: #ffbc13;
+  border-bottom: 1px solid #ffbc13;
+}

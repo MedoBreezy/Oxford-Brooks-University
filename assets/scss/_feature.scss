@@ -1,0 +1,18 @@
+.feature-item {
+    text-align: center;
+    padding: 50px 30px;
+    margin-bottom: 40px;
+}
+.feature-item:hover a {
+    color: #ffbc13;
+} 
+.feature-item:hover img {
+    transform: scale(1.1)
+}
+.feature-item img {
+    transition: all 0.4s ease-in-out;
+}
+.feature-item h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}

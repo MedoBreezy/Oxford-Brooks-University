@@ -1,0 +1,29 @@
+/* ======================================
+ *  14. accordion
+/* ====================================== */
+.set {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.set > a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: none;
+}
+
+.set > a i {
+  float: right;
+  margin-top: 2px;
+}
+.set a.active {
+  color: #ffbc13;
+}
+.content {
+  display: none;
+}
+
+.content p {
+  padding: 0px 25px 30px;
+}

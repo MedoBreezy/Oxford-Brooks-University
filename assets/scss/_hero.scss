@@ -1,0 +1,47 @@
+/* ======================================
+ *  17. hero
+/* ====================================== */
+.hero {
+  background: url("../img/hero.jpg") no-repeat center/cover fixed;
+  min-height: 1010px;
+}
+
+.hero .quote {
+  border-radius: 4px;
+  background-color: rgba(41, 204, 218, 0.11);
+  color: #fff;
+  margin-top: 440px;
+  font-weight: 700;
+}
+
+.hero .quote p {
+  font-size: 33px;
+}
+
+.hero .quote a {
+  color: #29ccda;
+  border-color: #29ccda;
+}
+
+.quote i {
+  background: #214957;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  display: inline-block;
+  border: 2px solid #fff;
+  cursor: pointer;
+  color: #29ccda;
+  transition: all 0.4s ease-in-out;
+}
+
+.quote i:hover {
+  background: #29ccda;
+  border: 2px solid #29ccda;
+  color: #fff;
+}
+
+.hero .link2 {
+  color: #fff;
+}

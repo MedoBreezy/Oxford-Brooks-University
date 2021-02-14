@@ -1,0 +1,341 @@
+/* ======================================
+   *  07. Curriculum
+  /* ====================================== */
+.curriculum a:hover {
+  color: #192836;
+}
+
+.curriculum .link:hover {
+  color: #ffbc13;
+}
+
+.curriculum-item,
+.curriculum-img,
+.curriculum-quote {
+  margin-bottom: 30px;
+}
+
+.curriculum-item h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.curriculum-item p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.curriculum-item a,
+.curriculum-item a i {
+  margin-top: 30px;
+  color: #192836;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.curriculum-item a:after {
+  display: none;
+}
+
+.curriculum-item {
+  padding: 30px 35px;
+}
+
+.curriculum-item:hover h3,
+.curriculum-item:hover a,
+.curriculum-item:hover a i {
+  color: #ffbc13;
+}
+
+.curriculum-quote {
+  background: url("../img/curriculum-item2.jpg") no-repeat;
+  padding: 130px 30px 30px 0;
+  background-size: cover;
+}
+
+.curriculum-quote h3 {
+  background: #ffffff2e;
+  padding: 30px 20px;
+  color: #fff;
+  max-width: 495px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: auto;
+  font-family: "Now";
+}
+
+.curriculum-quote h3 a {
+  color: #fff;
+  font-family: "Now";
+  display: inline;
+  border-bottom: 1px solid #fff;
+  font-weight: 500;
+}
+
+.curriculum-quote .link2 {
+  display: block;
+  text-align: right;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.curriculum-quote a:hover {
+  color: #ffbc13;
+}
+
+.curriculum-quote h3 a:hover {
+  color: #ffbc13;
+  border-bottom: 1px solid #ffbc13;
+}
+
+.curriculum-subject p {
+  font-size: 14px;
+}
+
+.curriculum-search {
+  padding: 60px 200px;
+  margin-bottom: 80px;
+  background: #fff;
+}
+
+.curriculum-search input {
+  border: 0;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Now";
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+.curriculum-search input:focus {
+  outline: none;
+}
+
+.curriculum-search input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+
+.curriculum-search input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+}
+
+.curriculum-search input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+}
+
+.curriculum-search input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+}
+
+.curriculum-subject {
+  padding: 25px 15px;
+  position: relative;
+}
+
+.curriculum-subject:hover h3 {
+  color: #ffbc13;
+}
+
+.curriculum-subject:hover {
+  box-shadow: 0px 28px 65px 0px rgba(188, 188, 188, 0.25);
+}
+
+.curriculum-subject:hover:after {
+  width: 55px;
+}
+
+.curriculum-subject:after {
+  content: "";
+  background: #ffbc13;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 0;
+  height: 3px;
+}
+
+.curriculum-subject,
+.curriculum-subject h3,
+.curriculum-subject:after {
+  transition: all 0.4s ease-in-out;
+}
+
+.curriculum-list {
+  background: url("../img/curriculum-list-bg.jpg") no-repeat;
+  padding: 40px 35px;
+  position: absolute;
+  width: 125%;
+  border-bottom: 4px solid #ffbc13;
+}
+.curriculum-list-2 {
+  background: url("../img/curriculum-list-2-bg.jpg") no-repeat;
+  padding: 30px 35px;
+  border-bottom: 4px solid #ffbc13;
+  position: absolute;
+  top: -76%;
+  z-index: 9;
+}
+.curriculum-list:hover:after {
+  width: 100%;
+}
+
+.curriculum-list ul {
+  margin-top: 25px;
+  padding-left: 25px;
+}
+.curriculum-list-2 ul {
+  padding-left: 25px;
+}
+.curriculum-list li,
+.curriculum-list-2 li {
+  margin-top: 7px;
+  position: relative;
+}
+.curriculum-list-2 li:first-child {
+  margin-top: 0;
+}
+.curriculum-list-2 li {
+  margin-top: 13px;
+}
+.curriculum-list li a,
+.curriculum-list-2 li a {
+  color: #192836;
+}
+
+.curriculum-list li a:hover,
+.curriculum-list-2 li a:hover {
+  text-decoration: underline;
+}
+
+.curriculum-list li a:hover:before,
+.curriculum-list-2 li a:hover:before {
+  left: -30px;
+  opacity: 1;
+}
+.curriculum-list li a:before,
+.curriculum-list-2 li a:before {
+  position: absolute;
+  content: "\e649";
+  font-family: "themify";
+  color: #ffbc13;
+  left: -45px;
+  font-size: 14px;
+  top: 3px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.curriculum-pro {
+  background: url("../img/curriculum-pro-bg.jpg") no-repeat right;
+  position: relative;
+  z-index: 1;
+}
+
+.curriculum-pro:after {
+  position: absolute;
+  content: url("../img/circle.png");
+  top: 80px;
+  right: 18%;
+  z-index: -1;
+}
+
+.curriculum-pro-counter ul {
+  outline: 10px solid #ffffff9e;
+  background-image: -moz-linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+  background-image: -webkit-linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+  background-image: -ms-linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+  max-width: 350px;
+  color: #fff;
+  text-align: center;
+  padding: 55px 60px;
+  animation: crescendo 2.4s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.curriculum-pro-counter ul li span {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Now";
+  line-height: 1.2;
+}
+
+.curriculum-pro-counter ul li i {
+  font-size: 40px;
+  margin-left: 3px;
+}
+
+.curriculum-pro-g1 {
+  background: linear-gradient(to bottom, #30cfd0 0%, #273499 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.curriculum-pro-g2 {
+  background: linear-gradient(to bottom, #fda085 0%, #f6d365 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.curriculum-pro-g3 {
+  background: linear-gradient(to bottom, #a9db48 0%, #2ca97f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.curriculum-pro-counter ul li {
+  margin-bottom: 60px;
+}
+
+.curriculum-pro-counter ul li:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1380px) {
+  .curriculum-list {
+    position: inherit;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .curriculum-list-2 a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .curriculum-search {
+    padding: 50px 0;
+  }
+
+  .curriculum-quote .link2 {
+    font-size: 14px;
+  }
+
+  .curriculum-quote h3 {
+    -webkit-transform: translate(5%, 0);
+    transform: translate(5%, 0);
+  }
+
+  .curriculum-img {
+    text-align: center;
+  }
+  .curriculum-list-2 {
+    margin-bottom: 40px;
+    margin-top: -90px;
+    position: static;
+  }
+}

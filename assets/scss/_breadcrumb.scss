@@ -1,0 +1,74 @@
+/* ======================================
+ *  9. breadcrumb
+/* ====================================== */
+.breadcrumb {
+  padding: 180px 0 100px;
+  overflow: hidden;
+}
+
+.breadcrumb::after {
+  content: "";
+  background-color: white;
+  opacity: 0.502;
+  position: absolute;
+  top: 0;
+  width: 1052px;
+  height: 309px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 48vw;
+}
+
+.breadcrumb-img {
+  background: url("../img/breadcrumb-bg.jpg") no-repeat center /cover fixed;
+}
+
+.breadcrumb li {
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+  color: #ffbc13;
+}
+
+.breadcrumb li a {
+  color: #192836;
+}
+
+.breadcrumb li:hover a {
+  color: #ffbc13;
+}
+
+.breadcrumb li:after {
+  content: "\e649";
+  position: absolute;
+  font-family: "themify";
+  font-size: 10px;
+  top: 5px;
+  right: -22px;
+  color: #192836;
+}
+
+.breadcrumb li:last-child:after {
+  display: none;
+}
+.breadcrumb h1,
+.breadcrumb ul {
+  z-index: 2;
+  position: relative;
+}
+@media only screen and (max-width: 1200px) {
+  .breadcrumb::after {
+    right: 40vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .breadcrumb::after {
+    right: 25vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .breadcrumb::after {
+    display: none;
+  }
+}

@@ -1,0 +1,153 @@
+/* ======================================
+ *  08. Video
+/* ====================================== */
+.video-base {
+  position: relative;
+}
+
+.video-base a {
+  position: absolute;
+  left: 25%;
+  top: 45%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.video-content {
+  max-width: 650px;
+  position: absolute;
+  top: 15%;
+  right: 40px;
+  background: #fff;
+  padding: 0 40px 100px 30px;
+  z-index: 9;
+}
+
+.video-content span {
+  font-size: 30px;
+  color: #fff;
+  padding: 30px 50px;
+  display: block;
+  width: 210px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.video-content li {
+  display: flex;
+  margin: 30px 0;
+}
+
+.video-content img {
+  margin-right: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.video-content li a {
+  margin-top: 10px;
+}
+
+.video-map {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.video-map i {
+  margin-right: 5px;
+}
+.video-content-text a:hover i {
+  color: #ffbc13;
+}
+.video-content-text a,
+.video-content-text i {
+  color: #192836;
+}
+
+.video-base .circle {
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  transition: all 0.9s ease-in-out;
+  fill: #ffff;
+  fill-rule: nonzero;
+}
+
+.video-base .triangle {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  transition: all 0.7s ease-in-out;
+  transform: translateY(0);
+}
+
+.video-base a:hover .circle {
+  stroke-dashoffset: 0;
+  fill: #fff;
+}
+
+.video-base a:hover .triangle {
+  stroke-dashoffset: 0;
+  z-index: 10;
+}
+
+.video-yellow a:hover .triangle,
+.video-yellow a:hover .circle,
+.video-yellow .triangle,
+.video-yellow .circle {
+  stroke: #ffbc13;
+}
+.video-yellow .video-content span {
+  background: #ffbc13;
+}
+
+.video-red a:hover .triangle,
+.video-red a:hover .circle,
+.video-red .triangle,
+.video-red .circle {
+  stroke: #d74d52;
+}
+.video-red .video-content span {
+  background: #d74d52;
+}
+
+.video-sky a:hover .triangle,
+.video-sky a:hover .circle,
+.video-sky .triangle,
+.video-sky .circle {
+  stroke: #29ccda;
+}
+.video-sky .video-content span {
+  background: #29ccda;
+}
+
+@media only screen and (max-width: 1200px) {
+  .video-content {
+    width: 540px;
+  }
+
+  .video-base a {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .video-content {
+    width: 440px;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .video-base a {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .video-content {
+    position: static;
+    width: 100%;
+  }
+  .video.mb160 {
+    margin-bottom: 100px;
+  }
+}

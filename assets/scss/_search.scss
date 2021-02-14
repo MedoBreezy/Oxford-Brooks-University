@@ -1,0 +1,58 @@
+/* ======================================
+ *  18. search
+/* ====================================== */
+.course-search input,
+.course-search button {
+  border-radius: 0;
+  border: 0;
+  height: 150px;
+  padding: 0 45px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.course-search button i {
+  font-size: 60px;
+  transition: all 0.4s ease-in-out;
+}
+.course-search button:hover i {
+  color: #fff;
+}
+.course-search .dropdown-menu a {
+  font-size: 30px;
+  padding: 10px 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.course-search .dropdown-menu {
+  background: #e8f4ff;
+  border: 0;
+  margin-top: 0px;
+  min-width: 282px;
+}
+
+.course-search .btn:hover {
+  color: #2e5c88;
+}
+.course-search .dropdown-menu a:hover {
+  background: #29ccda;
+  color: #fff;
+}
+
+.course-search .dropdown-toggle::after {
+  border: 0;
+  content: "\e649";
+  font-family: "themify";
+  font-size: 14px;
+  margin-left: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .course-search .input-group-prepend .dropdown-toggle {
+    width: 100%;
+  }
+
+  .course-search .input-group-prepend {
+    margin-right: 0;
+    width: 100%;
+  }
+}

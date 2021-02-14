@@ -1,0 +1,58 @@
+/* ======================================
+ *  11. counter
+/* ====================================== */
+.counter h2 {
+  font-weight: 700;
+  font-size: 40px;
+  padding: 0 50px;
+}
+
+.counter h2 strong {
+  color: #192836;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  top: 14px;
+  margin-left: 55px;
+}
+
+.counter h2 i {
+  font-size: 30px;
+  margin-left: 4px;
+  position: absolute;
+  top: 13px;
+}
+
+.counter img {
+  position: absolute;
+  top: -8px;
+  left: 77px;
+}
+
+@media only screen and (max-width: 991px) {
+  .counter h2 strong {
+    font-size: 15px;
+    margin-left: 13px;
+  }
+  .counter h2 i {
+    position: inherit;
+    font-size: 30px;
+    top: 13px;
+  }
+  .counter h2 {
+    padding: 0;
+  }
+  .counter img {
+    left: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .counter {
+    max-width: 70%;
+    margin: 60px auto;
+  }
+
+  .counter .col-md-4 {
+    margin: 20px 0;
+  }
+}

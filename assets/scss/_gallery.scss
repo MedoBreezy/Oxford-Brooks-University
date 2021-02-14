@@ -1,0 +1,142 @@
+/* ======================================
+ *  08. Gallery
+/* ====================================== */
+.gallery-carousel .item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-carousel .item img {
+  transition: all 0.4s ease-in-out;
+}
+.gallery-carousel .item:hover img {
+  transform: scale(1.5);
+}
+.gallery-carousel .item:after {
+    background: #ffbc13cf;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.gallery-carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  z-index: 1;
+  width: 320px;
+  height: 160px;
+  margin-left: -160px;
+  margin-top: -70px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.gallery-carousel-content h3 {
+  font-weight: 400;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.gallery-carousel-content a {
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  background: #ffffff7a;
+  display: inline-block;
+  border-radius: 50px;
+  line-height: 80px;
+  font-size: 25px;
+}
+
+.gallery-carousel-content a:hover {
+  background: #fff;
+  color: #ffbc13cf;
+}
+
+.gallery-carousel .item:hover .gallery-carousel-content,
+.gallery-carousel .item:hover:after {
+  opacity: 1;
+}
+.gallery-2 {
+  text-align: center;
+  color: #fff;
+}
+
+.gallery-card-1 {
+  background: #192836;
+}
+
+.gallery-card-2 {
+  background: #2E5C88;
+}
+
+.gallery-2 h2 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.gallery-2 p {
+  font-size: 20px;
+  margin: 40px 0;
+  font-family: "Now";
+}
+
+.gallery-2 span {
+  color: #29ccda;
+  font-weight: 700;
+}
+
+.gallery-2 .link2 {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.gallery-2 .gallery-card {
+  padding: 45px 25px;
+}
+.gallery-2-quote {
+    position: absolute;
+    bottom: 15px;
+    margin: 35px;
+}
+
+.gallery-2-quote .quote {
+    background-color: rgba(49, 99, 149, 0.78);
+}
+
+.gallery-2-quote .quote a {
+    color: #fff;
+    border-color: #fff;
+}
+
+.gallery-2-quote .quote a:hover {
+    color: #29ccda;
+    border-color: #29ccda;
+}
+
+.gallery-2-quote .link2 {
+    color: #29ccda !important;
+}
+.gallery-2 img {
+  height: 98.9%;
+}
+@media only screen and (max-width: 1200px) {
+  .gallery {
+    padding-top: 190px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .gallery {
+    padding-top: 210px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .gallery {
+    padding-top: 80px;
+  }
+}

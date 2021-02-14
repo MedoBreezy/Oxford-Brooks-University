@@ -1,0 +1,38 @@
+/* ======================================
+   *  06. event picker
+  /* ====================================== */
+.event-picker {
+  background: url("../img/event-picker-bg.jpg") no-repeat center;
+  z-index: 99;
+  width: 350px;
+  text-align: center;
+  padding: 50px 25px 85px 25px;
+  margin-top: -307px;
+  position: absolute;
+  right: 0;
+}
+
+.event-picker p {
+  max-width: 190px;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .event-picker {
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .event-picker {
+    width: 305px;
+  }
+}
+
+.Base {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.302;
+  box-shadow: 0px 3px 65px 0px rgba(157, 172, 193, 0.25);
+  width: 87px;
+  height: 87px;
+}

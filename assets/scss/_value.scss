@@ -1,0 +1,66 @@
+/* ======================================
+ *  13. value
+/* ====================================== */
+.our-value .item {
+  box-shadow: 0px 0 10px 0px rgba(188, 188, 188, 0.25);
+}
+.our-value .item a {
+  display: block;
+  font-weight: 600;
+  padding: 25px 20px;
+}
+.our-value-img img {
+  transition: all 0.4s ease-in-out;
+}
+.our-value .item:hover img {
+  transform: scale(1.5)
+}
+.our-value .item a:hover {
+  color: #ffbc13;
+  text-decoration: underline;
+}
+.our-value-img {
+  position: relative;
+  overflow: hidden;
+}
+.our-value i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background: #ffffff6b;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-left: -40px;
+  margin-top: -40px;
+  font-size: 18px;
+}
+
+.our-value i:hover {
+  background: #ffbc13;
+}
+
+
+
+.our-value .owl-stage-outer {
+  padding: 0 15px 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  .our-value .col-md-3 {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .our-value-section {
+    text-align: center;
+  }
+  .our-value-carousel {
+    margin-top: 50px;
+  }
+}

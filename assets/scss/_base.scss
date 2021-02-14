@@ -1,0 +1,101 @@
+/* ======================================
+   *  01. Base
+  /* ====================================== */
+
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #192836;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Now";
+  margin: 0;
+  color: #192836;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #262626;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+a,
+a:after,
+a:before {
+  color: #192836;
+  transition: all 0.4s ease-in-out;
+}
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.form-control:focus,
+.btn:focus,
+input:focus,
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
